@@ -113,7 +113,7 @@ public class uploadfile {
        rb.keyPress(KeyEvent.VK_ESCAPE); 
         rb.keyRelease(KeyEvent.VK_ESCAPE); 
         String finalOutputpage =chromedriver.getTitle();
-        
+        Thread.sleep(2000);
              File f=((TakesScreenshot)chromedriver).getScreenshotAs(OutputType.FILE);
             Date date = new Date();
             Files.copy(f,new File("/Users/rakeshks/Desktop/"+finalOutputpage+"-"+date +".png"));
