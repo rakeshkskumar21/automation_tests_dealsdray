@@ -116,7 +116,7 @@ public class uploadfile {
         
              File f=((TakesScreenshot)chromedriver).getScreenshotAs(OutputType.FILE);
             Date date = new Date();
-            Files.copy(f,new File("/Users/rakeshks/Desktop/assign_ui_project/"+finalOutputpage+"-"+date +".png"));
+            Files.copy(f,new File("/Users/rakeshks/Desktop/"+finalOutputpage+"-"+date +".png"));
         
     }
 
